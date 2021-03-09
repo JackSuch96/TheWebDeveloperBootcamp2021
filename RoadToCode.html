@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Road To Code</title>
+    <a name='#'></a>
 </head>
 <body>  
 <main>
@@ -59,7 +60,7 @@
             </p>
 <hr>
             <section>
-                <p> <i>Wondering how to get in contact if you have any advice?</i></p>
+                <p> <i>Get in contact if you have any advice?</i></p>
                 <ol>
                     <li>Click the above link to my <a href= 'https://www.linkedin.com/in/jacksuch/' title= 'My LinkedIn Profile OFC'> LinkedIn</a>  profile.</li>
                     <li>Connect with me (of course)</li>
@@ -67,26 +68,71 @@
                 </ol>
             </section>
 <hr>
-            <p> **<i>Wondering who's the fine developer who made this site?</i>**</p>
+            <p> **<i>Wondering who's made this site?</i>**</p>
             <p><a href= 'https://www.thecandidate.co.uk/about/' title= 'A picture of an overweight me'> <img src= 'https://www.thecandidate.co.uk/media/792331/jack-such-1000.png?quality=75' alt= 'Give us a pose Jack'></a></p>
 <hr>
     <h2>Leave a message!</h2>
-        <form>
+    <div>
+        <form action='/submit' >
+        <p>
+            <label for='fullname'>Enter Your Full Name</label>
+            <input type='name' placeholder="Full Name" id='fullname' name='fullname'>
+        </p>
         <p>
             <label for='Emailaddress'>Enter Your Email Address</label>
-            <input type='email' placeholder='Email address' id='Emailaddress'> 
+            <input type='email' placeholder='Email address' id='Emailaddress' name='username'> 
         </p>
         <p>
             <label for='phonenumber'>Enter Your Phone Number</label>
-            <input type='tel' placeholder='Phone Number' id='phonenumber'> 
+            <input type='tel' placeholder='Phone Number' id='phonenumber' name='phonenumber'> 
         </p>
         <p>
             <label for='comments'>Let me know your thoughts on RoadToCode</label>
-            <input type='text' placeholder='Your thoughts' id='comments'> 
+            <textarea id='comments' name='comments'></textarea>
+        </p>
+        <p>
+            <label for='rate'>Rate My Portfolio Site</label>
+            <input type='range' id='rate' name='rate' min='0' max='10'></imput>
+        </p>
+        <p>
+            <label for='agree_tac'><b>Check</b> To Consent To Me Holding Your Data For Academic Purposes</label>
+            <input type='checkbox' name='agree_tac' id='agree' checked>
+        </p>
+        <p>
+            <label for='Email'>Preferred Contact:Email</label>
+            <input type='radio' name='contactvia' id='Email' value='contactemail'>
+            <label for='Phone'>Preferred Contact:Phone</label>
+            <input type='radio' name='contactvia' id='Phone' value='contactemail'>
+            <label for='None'>Preferred Contact:None</label>
+            <input type='radio' name='contactvia' id='None' value='contactemail'>
+        </p>
+        <p>
+            <label for='timecontact'>Best Time For Contact</label>
+            <select name='timecontact' id='timecontact'>
+                <option value='morning'>Morning</option>
+                <option value='afternoon'>Afternoon</option>
+                <option value='evening'>Evening</option>
+            </select>
         </p>
         <P><i>All data sorted (email address / phone numbers) will only be used
             for managing my database. No data will be shared with external sources</i></P>
-        <button>Submit</button>
+        <button type='submit'>Submit</button>
+        <!--Submission into above form results in: 
+        file:///submit?fullname=jack+Such&username=jacks%40thecandidate.co.uk&phonenumber=07447471174&thoughts=Cool
+        -->
+        </form>
+    </div>
+<hr>
+        <h3>Testing HiJacking Google's Search Functionality</h3>
+        <form action='https://www.google.co.uk/search?'>
+            <input type='text' name='query' placeholder='Type & Submit To Search Google'>
+            <button>Search Google</button>
+        </form>
+<hr>
+        <h3>Check Out The Live Roles I'm Recruiting For</h3>
+        <form action='https://www.thecandidate.co.uk/all-jobs/?'>
+            <input type='text' name='q' placeholder='Search My Live Roles For A Keyword'>
+            <button>Search The Candidate</button>
         </form>
 <hr>
         <footer>
@@ -95,6 +141,7 @@
                 <!--Add more footer links to portfolio, aspirations, skillset, personal etc sections-->
             </ul>
             <p> <span class='footerthanks'>Thanks for visitng Road To Code - the portfolio website for Jack Such</span><!--Use CSS to minimalise this and dull it out compared to the content--></p>
+            <a href='#'>Back To Top</a>
         </footer>
     </body>
 </html>
