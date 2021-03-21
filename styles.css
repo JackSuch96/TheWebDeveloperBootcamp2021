@@ -1,0 +1,63 @@
+/* *{xyz} = universal symbol*/
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold; 
+    letter-spacing: 5px;
+    }
+
+h2{
+    text-align: center;
+    letter-spacing: 3px;
+    }
+
+a{
+    color: black;
+    }
+
+body{ 
+    background: linear-gradient(0.25turn, #aae4fd, #ebf8e1, #f8b1a0);   
+    margin: 10%;
+    }
+
+.lamf {
+    border: 2px solid black;
+    margin: 1px;
+    padding: 3px;
+    background-color: white;
+    }
+
+.textdec {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    }
+
+#submitreview {
+    text-align: center;
+    background-color: palegoldenrod;
+    margin-left: 45%;
+    margin-right: 45%;
+    }
+
+.searchfunccontainer {
+    display: flex;
+}
+
+.searchfuncL {
+    border: 2px solid black;
+    margin: 1px;
+    padding: 3px;
+    flex: auto;
+    background-color: white;
+}
+
+.searchfuncR {
+    border: 2px solid black;
+    margin: 1px;
+    padding: 3px;
+    flex: auto;
+    background-color: white;
+}
+
