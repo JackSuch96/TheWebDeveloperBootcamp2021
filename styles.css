@@ -12,14 +12,39 @@ h2{
     letter-spacing: 3px;
     }
 
+::selection {
+    background-color: gainsboro;
+}
+
 a{
     color: black;
     }
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+button:hover{
+    background-color: teal;
+}
 
 body{ 
     background: linear-gradient(0.25turn, #aae4fd, #ebf8e1, #f8b1a0);   
     margin: 10%;
     }
+
+p::first-letter {
+    color: red;
+}
+
+p::first-line{
+    font-style: italic;
+}
 
 .lamf {
     border: 2px solid black;
@@ -27,6 +52,10 @@ body{
     padding: 3px;
     background-color: white;
     }
+
+.lamf [type='radio']:checked{
+    border: 1px dotted black
+}
 
 .textdec {
     text-decoration: none;
@@ -51,6 +80,8 @@ body{
     padding: 3px;
     flex: auto;
     background-color: white;
+    align-items: center;
+    text-align: center;
 }
 
 .searchfuncR {
@@ -59,5 +90,21 @@ body{
     padding: 3px;
     flex: auto;
     background-color: white;
+    text-align: center;
+}
+
+/* Space will include within for example the below, LI (space) a = all 
+    anchor tags inside an li*/
+
+li a {
+    color: red
+}
+
+.lamf type=range {
+    color: red;
+}
+
+input + button {
+    background-color: palegoldenrod;
 }
 
