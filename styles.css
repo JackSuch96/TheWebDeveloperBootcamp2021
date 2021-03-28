@@ -143,3 +143,63 @@ h3 {
     border: 1px dotted black;
     display: inline;
 }
+
+.positiondiv1 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: grey;
+}
+
+#positionid1 {
+    background-color: green;
+    position: static;
+    top: 50px;
+}
+
+.positiondiv2 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: grey;
+}
+
+#positionid2 {
+    background-color: green;
+    position: relative;
+    top: 50px;
+}
+
+#iddiv3 {
+    position: relative;
+}
+
+.positiondiv3 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: grey;
+}
+
+#positionid3 {
+    background-color: green;
+    position: absolute;
+    top: 1px;
+    left: 50px
+}
+
+.positiondiv4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: grey;
+}
+
+#positionid4 {
+    background-color: green;
+    position: fixed;
+}
